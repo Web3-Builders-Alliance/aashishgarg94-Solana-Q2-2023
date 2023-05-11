@@ -55,7 +55,6 @@ const mint = new PublicKey("6mGYMqMGWK9CBwpfynLkBTtTMHiJTREp1W2rbQDouRX6");
           )
           
           console.log(tokenAccountInfo_new.amount);
-          // 100
           
           console.log(tokenAccount.address.toBase58());
 
