@@ -15,9 +15,9 @@ const metaplex = Metaplex.make(connection).use(keypairIdentity(keypair)).use(bun
 (async () => {
     try {
         const nft = metaplex.nfts().create({
-            name: "Felina over a cliff",
-            symbol: "FELCLIFF",
-            uri: "https://arweave.net/922cKuuHm4YcH55ASCyajZAFbFbryGtbPm2NdLrlAo8",
+            name: "Generug Aashish",
+            symbol: "GENAASH",
+            uri: "https://arweave.net/7Z6uBOQa_WcqxSmIael6znzS3zHKOFmgbdQ6R2tMzJw",
             creators: [
                 {
                     address: keypair.publicKey,

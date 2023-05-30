@@ -5,7 +5,7 @@ import wallet from "./dev-wallet.json"
 const from = Keypair.fromSecretKey(new Uint8Array(wallet));
 
 // Define our WBA public key
-const to = new PublicKey("BPYEeLDEVBvf9ExVYZADUHExHVtHwcz1rjkhvsw6JDaE");
+const to = new PublicKey("3RLJKGSJSLdKoguXnvoTtonVc3SnUZ3d4HzcUcLSykQa");
 
 //Create a Solana devnet connection
 const connection = new Connection("https://api.devnet.solana.com");
@@ -17,7 +17,7 @@ const connection = new Connection("https://api.devnet.solana.com");
             SystemProgram.transfer({
                 fromPubkey: from.publicKey,
                 toPubkey:  to,
-                lamports: LAMPORTS_PER_SOL/100,
+                lamports: 1 * LAMPORTS_PER_SOL,
             })
         );
         transaction.recentBlockhash = (await connection.getLatestBlockhash('confirmed')).blockhash;

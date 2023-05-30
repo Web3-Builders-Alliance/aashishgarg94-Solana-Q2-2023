@@ -15,15 +15,15 @@ const metaplex = Metaplex.make(connection).use(keypairIdentity(keypair)).use(bun
 (async () => {
     try {
         const { uri } = await metaplex.nfts().uploadMetadata({
-            name: "Felina over a cliff",
-            symbol: "FELINA_ON_CLIFF",
-            description: "Felina jumping over a cliff looking cool",
-            image: "https://arweave.net/k9e7KdD3QEZGau9UI69IoBQu1a4Ei13EvzI9bQQKk6Q",
+            name: "Generug Aashish",
+            symbol: "GENAASHISH",
+            description: "Generug Aashish",
+            image: "https://arweave.net/sERBJStkKNZ_Nn-2sKsPqTRbI0HrtTTknl_dtn4VcN4",
             attributes: [],
             properties: {
                 files: [
                     {
-                        uri: "https://arweave.net/k9e7KdD3QEZGau9UI69IoBQu1a4Ei13EvzI9bQQKk6Q",
+                        uri: "https://arweave.net/sERBJStkKNZ_Nn-2sKsPqTRbI0HrtTTknl_dtn4VcN4",
                         type: "image/png"
                     }
                 ]

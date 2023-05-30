@@ -14,7 +14,7 @@ const metaplex = Metaplex.make(connection).use(keypairIdentity(keypair)).use(bun
 
 (async () => {
     try {
-        const image = await readFile('./images/felina_cliff.png');
+        const image = await readFile('./images/generug.png');
         const metaplex_image = toMetaplexFile(image, "felina_over_a_cliff.png");
         const uri = await metaplex.storage().upload(metaplex_image);
         console.log(uri);
